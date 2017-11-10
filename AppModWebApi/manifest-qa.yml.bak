@@ -1,0 +1,8 @@
+---
+applications:
+- name: AppModWebApi
+  env:
+    ASPNETCORE_ENVIRONMENT: development
+    buildpack: https://github.com/cloudfoundry/dotnet-core-buildpack.git
+  services:
+   - config-server

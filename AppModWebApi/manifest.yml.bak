@@ -1,0 +1,11 @@
+---
+applications:
+- name: AppModWebApi
+  memory: 512M
+  random-route: true
+  env: 
+  ASPNETCORE_ENVIRONMENT: development
+  path: .
+  buildpack: https://github.com/cloudfoundry/dotnet-core-buildpack.git
+  services:
+    - Config Server
